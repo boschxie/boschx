@@ -1,0 +1,14 @@
+/* This is to apply the formatting for first header */
+h1 {
+    color: orange;
+    background-color: lightgoldenrodyellow;
+    border: 3px black dashed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.hidden {
+    Display: none;
+}
