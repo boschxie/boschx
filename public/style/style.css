@@ -3,10 +3,9 @@ h1 {
     color: orange;
     background-color: lightgoldenrodyellow;
     border: 3px black solid;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    margin: 10px;
     font-family: sans-serif;
 }
 
@@ -53,4 +52,7 @@ h1 {
 
   footer {
     text-align: center;
+    background-color: aliceblue;
+    padding-bottom: 15px;
+    padding-top: 1px;
   }
