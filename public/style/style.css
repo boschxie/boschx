@@ -21,7 +21,6 @@ h1 {
     font-family: sans-serif;
 }
 
-/* Style the navbar */
 #navbar {
     position: sticky;
     top: 0;
@@ -29,8 +28,6 @@ h1 {
     background-color: #333;
     font-family: sans-serif;
   }
-  
-  /* Navbar links */
   #navbar a {
     float: left;
     display: block;
@@ -39,13 +36,10 @@ h1 {
     padding: 14px;
     text-decoration: none;
   }
-
   #navbar a:hover {
     background-color: rgb(94, 151, 173);
     transition: 0.8s;
   }
-  
-  /* Page content */
   .content {
     padding: 16px;
   }
@@ -56,3 +50,67 @@ h1 {
     padding-bottom: 15px;
     padding-top: 1px;
   }
+
+  /* Add blog style for below sections*/
+    * {
+        box-sizing: border-box;
+    }
+    
+    /* Add a gray background color with some padding */
+    body {
+        font-family: sans-serif;
+        padding: 20px;
+        background: #f1f1f1;
+    }
+    
+    /* Header/Blog Title */
+    .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+    }
+    
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {   
+        float: left;
+        width: 75%;
+    }
+    
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+    
+    /* Fake image */
+    .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    
+    /* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 768px) {
+        .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+        }
+    }
