@@ -23,3 +23,20 @@ fetch('database.json')
   .catch(error => {
     console.error('Error fetching data:', error);
   });
+
+  fetch('database.json')
+  .then(response => response.json())
+  .then(data => {
+    const filteredData = data.filter(item => item.id === 2); // Assuming ID 1 has the updated date
+
+    if (filteredData.length > 0) {
+      const aboutMe = filteredData[0].mainT;
+      const dateElement = document.getElementById('aboutMe');
+      dateElement.textContent = aboutMe;
+    } else {
+      console.error('No matching data found');
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
