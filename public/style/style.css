@@ -25,6 +25,7 @@ h1 {
 
 .paraText {
     font-family: sans-serif;
+    line-height: 35px;
 }
 
 #navbar {
