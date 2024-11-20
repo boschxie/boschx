@@ -17,6 +17,12 @@ h1 {
     text-align: center;
 }
 
+.logo  {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+}
+
 .paraText {
     font-family: sans-serif;
 }
