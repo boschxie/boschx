@@ -28,6 +28,11 @@ h1 {
     line-height: 35px;
 }
 
+.bpic {
+    max-width: 300px;
+    height:auto;
+}
+
 #navbar {
     position: sticky;
     top: 0;
@@ -120,4 +125,9 @@ h1 {
         width: 100%;
         padding: 0;
         }
+    
+        .bpic {
+            max-width: 250px;
+            height:auto;
+        }        
     }
