@@ -1,11 +1,7 @@
 /* This is to apply the formatting for first header */
 h1 {
-    color: orange;
-    background-color: lightgoldenrodyellow;
-    border: 3px black solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
+    color: rgb(250, 244, 236);
+    text-align: left;
     font-family: sans-serif;
 }
 
@@ -14,13 +10,19 @@ h1 {
 }
 
 .container {
-    text-align: center;
+    position: relative;
+    text-align: left;
+}
+.bottom-left {
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
 }
 
 .logo  {
     width: 100%;
     height: auto;
-    max-width: 1000px;
+    max-width: 1100px;
 }
 
 .paraText {
@@ -31,25 +33,28 @@ h1 {
 .bpic {
     max-width: 300px;
     height:auto;
+    border: #383535 solid 3px;
+    border-radius: 10px;
 }
 
 #navbar {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #201d1d;
     font-family: sans-serif;
+    max-width: 1100px;
   }
   #navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 14px;
     text-decoration: none;
   }
   #navbar a:hover {
-    background-color: rgb(94, 151, 173);
+    background-color: rgba(29, 120, 206, 0.774);
     transition: 0.8s;
   }
   .content {
@@ -61,63 +66,67 @@ h1 {
     background-color: aliceblue;
     padding-bottom: 3px;
     padding-top: 18px;
+    max-width: 1100px;
+    border-radius: 10px;
   }
 
-  /* Add blog style for below sections*/
-    * {
-        box-sizing: border-box;
-    }
-    
-    /* Add a gray background color with some padding */
-    body {
-        font-family: sans-serif;
-        padding: 20px;
-        background: #f1f1f1;
-    }
-    
-    /* Header/Blog Title */
-    .header {
-        padding: 30px;
-        font-size: 40px;
-        text-align: center;
-        background: white;
-    }
-    
-    /* Create two unequal columns that floats next to each other */
-    /* Left column */
-    .leftcolumn {   
-        float: left;
-        width: 75%;
-    }
-    
-    /* Right column */
-    .rightcolumn {
-        float: left;
-        width: 25%;
-        padding-left: 20px;
-    }
-    
-    /* Fake image */
-    .fakeimg {
-        background-color: #aaa;
-        width: 100%;
-        padding: 20px;
-    }
-    
-    /* Add a card effect for articles */
-    .card {
-        background-color: white;
-        padding: 20px;
-        margin-top: 20px;
-    }
-    
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
+/* Add blog style for below sections*/
+* {
+    box-sizing: border-box;
+    max-width: 1100px;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #f1f1f1;
+    line-height: 20px;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
     
 /* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 768px) {
