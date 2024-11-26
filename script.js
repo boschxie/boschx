@@ -1,3 +1,18 @@
+//function for changing logo src depending on screen size
+const logo = document.querySelector('.logo');
+
+function setLogoSrc() {
+  if (window.innerWidth <= 768) {
+    logo.src = './public/images/logo_small.jpg';
+  } else {
+    logo.src = './public/images/logo.jpg';
+  }
+}
+
+setLogoSrc();  /*Initial setup*/
+
+window.addEventListener('resize', setLogoSrc);  /* Adjust logo on window resize */
+
 //function for scrolling to top upon hover over link
 const scrollLink = document.getElementById('scrollLink');
 
@@ -22,12 +37,12 @@ fetch('database.json')
   })
   .catch(error => {
     console.error('Error fetching data:', error);
-  });
+});
 
-  fetch('database.json')
+fetch('database.json')
   .then(response => response.json())
   .then(data => {
-    const filteredData = data.filter(item => item.id === 2); // Assuming ID 1 has the updated date
+    const filteredData = data.filter(item => item.id === 2); // Assuming ID 2 has the updated date
 
     if (filteredData.length > 0) {
       const aboutMe = filteredData[0].mainT;
@@ -39,4 +54,4 @@ fetch('database.json')
   })
   .catch(error => {
     console.error('Error fetching data:', error);
-  });
+});
