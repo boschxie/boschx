@@ -52,7 +52,7 @@ fetch('database.json')
       const aboutMeElement = document.getElementById('aboutMe');
       aboutMeElement.textContent = aboutMe;
       const profilePic = document.querySelector('.profilePic');
-      profilePic.src = filteredData[0].url;
+      profilePic.src = filteredData[0].imgUrl;
     } else {
       console.error('No matching data found');
     }
