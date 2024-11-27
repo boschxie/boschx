@@ -58,3 +58,29 @@ fetch('database.json')
   .catch(error => {
     console.error('Error fetching data:', error);
 });
+
+fetch('database.json')
+  .then(response => response.json())
+  .then(data => {
+    const filteredData = data.filter(item => item.id === 3); // Assuming ID 2 has the updated followMe
+
+    if (filteredData.length > 0) {
+      const followMeHeader = filteredData[0].mainH;
+      const followMeHeaderElement = document.getElementById('followMeHeader');
+      followMeHeaderElement.textContent = followMeHeader;
+      const followMe = filteredData[0].mainT;
+      const followMeElement = document.getElementById('followMe');
+      followMeElement.textContent = followMe;
+      const followMeUrl = filteredData[0].url;
+      const followMeUrlElement = document.getElementById('followMeUrl');
+      followMeUrlElement.url = followMeUrl;
+      const followMeUrlTitle = filteredData[0].title;
+      const followMeUrlTitleElement = document.getElementById('followMeUrlTitle');
+      followMeUrlTitleElement.textContent = followMeUrlTitle;
+    } else {
+      console.error('No matching data found');
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+});
