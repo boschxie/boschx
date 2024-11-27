@@ -51,6 +51,8 @@ fetch('database.json')
       const aboutMe = filteredData[0].mainT;
       const aboutMeElement = document.getElementById('aboutMe');
       aboutMeElement.textContent = aboutMe;
+      const profilePic = document.querySelector('.profilePic');
+      profilePic.src = filteredData[0].url;
     } else {
       console.error('No matching data found');
     }
@@ -62,7 +64,7 @@ fetch('database.json')
 fetch('database.json')
   .then(response => response.json())
   .then(data => {
-    const filteredData = data.filter(item => item.id === 3); // Assuming ID 2 has the updated followMe
+    const filteredData = data.filter(item => item.id === 3); // Assuming ID 3 has the updated followMe
 
     if (filteredData.length > 0) {
       const followMeHeader = filteredData[0].mainH;
@@ -74,9 +76,6 @@ fetch('database.json')
       const followMeUrl = filteredData[0].url;
       const followMeUrlElement = document.getElementById('followMeUrl');
       followMeUrlElement.url = followMeUrl;
-      const followMeUrlTitle = filteredData[0].title;
-      const followMeUrlTitleElement = document.getElementById('followMeUrlTitle');
-      followMeUrlTitleElement.textContent = followMeUrlTitle;
     } else {
       console.error('No matching data found');
     }
