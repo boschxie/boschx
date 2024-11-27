@@ -45,6 +45,9 @@ fetch('database.json')
     const filteredData = data.filter(item => item.id === 2); // Assuming ID 2 has the updated aboutMe
 
     if (filteredData.length > 0) {
+      const aboutMeHeader = filteredData[0].mainH;
+      const aboutMeHeaderElement = document.getElementById('aboutMeHeader');
+      aboutMeHeaderElement.textContent = aboutMeHeader;
       const aboutMe = filteredData[0].mainT;
       const aboutMeElement = document.getElementById('aboutMe');
       aboutMeElement.textContent = aboutMe;
