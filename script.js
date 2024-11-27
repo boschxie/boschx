@@ -42,12 +42,12 @@ fetch('database.json')
 fetch('database.json')
   .then(response => response.json())
   .then(data => {
-    const filteredData = data.filter(item => item.id === 2); // Assuming ID 2 has the updated date
+    const filteredData = data.filter(item => item.id === 2); // Assuming ID 2 has the updated aboutMe
 
     if (filteredData.length > 0) {
       const aboutMe = filteredData[0].mainT;
-      const dateElement = document.getElementById('aboutMe');
-      dateElement.textContent = aboutMe;
+      const aboutMeElement = document.getElementById('aboutMe');
+      aboutMeElement.textContent = aboutMe;
     } else {
       console.error('No matching data found');
     }
