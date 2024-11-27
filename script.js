@@ -73,9 +73,6 @@ fetch('database.json')
       const followMe = filteredData[0].mainT;
       const followMeElement = document.getElementById('followMe');
       followMeElement.textContent = followMe;
-      const followMeUrl = filteredData[0].url;
-      const followMeUrlElement = document.getElementById('followMeUrl');
-      followMeUrlElement.url = followMeUrl;
     } else {
       console.error('No matching data found');
     }
