@@ -81,10 +81,10 @@ fetch('database.json')
     console.error('Error fetching data:', error);
 });
 
-//test
+//Function for filtering of the cards in the left column and clear button
 const searchInput = document.getElementById('searchInput');
 const clearButton = document.getElementById('clearButton');
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelector('.leftcolumn').querySelectorAll('.card');
 
 clearButton.addEventListener('click', () => {
   searchInput.value = '';
