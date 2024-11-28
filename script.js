@@ -80,3 +80,30 @@ fetch('database.json')
   .catch(error => {
     console.error('Error fetching data:', error);
 });
+
+//test
+const searchInput = document.getElementById('searchInput');
+const clearButton = document.getElementById('clearButton');
+const cards = document.querySelectorAll('.card');
+
+clearButton.addEventListener('click', () => {
+  searchInput.value = '';
+  cards.forEach(card => {
+    card.style.display = 'block';
+  });
+});
+
+searchInput.addEventListener('input', () => {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  cards.forEach(card => {
+    const cardTitle = card.querySelector('h2').textContent.toLowerCase(); 1 
+    const cardContent = card.querySelector('p').textContent.toLowerCase();
+
+    if (cardTitle.includes(searchTerm) || cardContent.includes(searchTerm)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
