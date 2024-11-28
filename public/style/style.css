@@ -13,6 +13,16 @@ h2 h3 h4 {
     Display: none;
 }
 
+#searchInput {
+    font-family: sans-serif;
+}
+
+#clearButton {
+    font-family: sans-serif;
+    color: black;
+    background-color: whitesmoke ;
+}
+
 .container {
     position: relative;
     text-align: left;
