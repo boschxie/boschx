@@ -97,15 +97,14 @@ searchInput.addEventListener('input', () => {
   const searchTerm = searchInput.value.toLowerCase();
 
   cards.forEach(card => {
-    const cardTitle = card.querySelector('h2').textContent.toLowerCase(); 1 
+    const cardTitle = card.querySelector('h2').textContent.toLowerCase(); 
+    const cardSubTitle = card.querySelector('h4').textContent.toLowerCase(); 
     const cardContent = card.querySelector('p').textContent.toLowerCase();
 
-    if (cardTitle.includes(searchTerm) || cardContent.includes(searchTerm)) {
+    if (cardTitle.includes(searchTerm) || cardContent.includes(searchTerm) || cardSubTitle.includes(searchTerm)) {
       card.style.display = 'block';
     } else {
       card.style.display = 'none';
     }
   });
 });
-
-//test
