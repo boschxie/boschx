@@ -55,10 +55,16 @@ div.scroll-container {
     background-color: #bac8d8 ;
     overflow: auto;
     white-space: nowrap;
-    padding: 2px;
+    padding: 5px;
   }
 div.scroll-container img {
-    padding: 5px;
+    padding: 0px;
+  }
+.bpic2 {
+    max-width: 300px;
+    height:auto;
+    border: #383535 solid 1px;
+    border-radius: 10px;
 }
 
 #navbar {
