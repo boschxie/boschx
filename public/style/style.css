@@ -71,23 +71,20 @@ div.scroll-container img {
 ::-webkit-scrollbar {
     width: 6px;
   }
-  
   /* Scrollbar track */
   ::-webkit-scrollbar-track {
     background-color: #f1f1f1;
     border-radius: 6px;
   }
-  
   /* Scrollbar thumb */
   ::-webkit-scrollbar-thumb {
     background-color: #B6A28E;
     border-radius: 10px;
   }
-  
   /* Scrollbar thumb hover */
   ::-webkit-scrollbar-thumb:hover {
     background-color: #927f6d;
-  }
+}
 
 #navbar {
     position: sticky;
