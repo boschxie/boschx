@@ -75,11 +75,13 @@ div.scroll-container img {
   ::-webkit-scrollbar-track {
     background-color: #f1f1f1;
     border-radius: 6px;
+    border: 1px solid #ddd;
   }
   /* Scrollbar thumb */
   ::-webkit-scrollbar-thumb {
     background-color: #B6A28E;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
   /* Scrollbar thumb hover */
   ::-webkit-scrollbar-thumb:hover {
@@ -156,13 +158,6 @@ body {
     float: left;
     width: 25%;
     padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
 }
 
 /* Add a card effect for articles */
